@@ -267,9 +267,10 @@ p { margin: 0 0 1em; }
 .home-hero__logo {
   position: absolute;
   z-index: 4;
-  top: clamp(1.4rem, 3vh, 2.4rem);
-  left: clamp(0.6rem, 1.6vw, 1.4rem);
-  width: clamp(110px, 13vw, 210px);
+  top: clamp(1.5rem, 4vh, 2.6rem);
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(132px, 12.6vw, 180px);
   display: block;
 }
 .home-hero__logo img {
@@ -293,7 +294,9 @@ p { margin: 0 0 1em; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 38%;
+  object-position: center center;
+  transform: scale(1.3);
+  transform-origin: center;
   display: block;
   filter: saturate(0.88) contrast(0.94) brightness(1.05);
 }
@@ -416,14 +419,15 @@ p { margin: 0 0 1em; }
 .home-hero__nav a:hover { color: var(--ink-soft); }
 .home-hero__nav a:hover::after { transform: scaleX(1); }
 
-/* ----- putto mascot (right strip) ----- */
+/* ----- mascot illustration (right strip) ----- */
 
 .home-hero__mascot {
   position: absolute;
   z-index: 3;
-  top: clamp(10rem, 24vh, 16rem);
-  right: clamp(0.2rem, 1vw, 0.9rem);
-  width: clamp(120px, 14vw, 220px);
+  top: clamp(8.8rem, 20vh, 12.8rem);
+  left: 44%;
+  transform: translateX(-50%);
+  width: clamp(108px, 10.2vw, 156px);
   height: auto;
   pointer-events: none;
   filter: drop-shadow(0 8px 16px rgba(90, 36, 24, 0.18));
@@ -433,11 +437,11 @@ p { margin: 0 0 1em; }
 @media (max-width: 800px) {
   :root { --hero-side: 88px; }
   .home-hero { min-height: 560px; }
-  .home-hero__logo { width: 76px; top: 1rem; left: 0.55rem; }
+  .home-hero__logo { width: 84px; top: 0.9rem; left: 50%; transform: translateX(-50%); }
   .home-hero__nav { top: 1rem; right: 0.55rem; }
   .home-hero__nav a { font-size: 0.62rem; letter-spacing: 0.12em; }
   .home-hero__nav ul { gap: 0.5rem; }
-  .home-hero__mascot { width: 78px; top: 9rem; right: 0.2rem; }
+  .home-hero__mascot { width: 78px; top: 7.9rem; left: 45%; transform: translateX(-50%); }
   .home-hero__cta { font-size: 0.78rem; padding: 0.5rem 0.95rem; letter-spacing: 0.2em; }
 }
 
@@ -456,6 +460,7 @@ p { margin: 0 0 1em; }
 
   .home-hero__photo > img {
     object-position: center center;
+    transform: scale(1.15);
   }
 }
 
