@@ -1,0 +1,12 @@
+*.psd
+*.ai
+*.pdf
+_renders/
+IMG_*.jpg
+IMG_*.jpeg
+Hero*.jpeg
+Hero*.jpg
+.claude/
+.DS_Store
+Thumbs.db
+node_modules/
