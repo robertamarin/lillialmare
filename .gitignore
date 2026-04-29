@@ -6,6 +6,7 @@ IMG_*.jpg
 IMG_*.jpeg
 Hero*.jpeg
 Hero*.jpg
+!assets/hero.jpg
 .claude/
 .DS_Store
 Thumbs.db
